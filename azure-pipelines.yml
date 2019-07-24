@@ -21,6 +21,7 @@ steps:
       sudo apt-add-repository ppa:ansible/ansible
       sudo apt-get update
       sudo apt-get install ansible -y
+      ansible --version
       
       
       # Use the environment variables input below to pass secret variables to this script
