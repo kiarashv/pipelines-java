@@ -21,17 +21,16 @@ steps:
       sudo apt-add-repository ppa:ansible/ansible
       sudo apt-get update
       sudo apt-get install ansible -y
-      sudo apt-get install python -y
       
       
       # Use the environment variables input below to pass secret variables to this script
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+#- task: Maven@3
+#  inputs:
+#    mavenPomFile: 'pom.xml'
+#    mavenOptions: '-Xmx3072m'
+#    javaHomeOption: 'JDKVersion'
+#    jdkVersionOption: '1.8'
+#    jdkArchitectureOption: 'x64'
+#    publishJUnitResults: false
+#    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+#    goals: 'package'
