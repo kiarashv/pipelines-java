@@ -16,11 +16,11 @@ steps:
     script: |
       # Write your commands here
       
-      sudo apt-get update
-      sudo apt-get upgrade -y
-      sudo apt-add-repository ppa:ansible/ansible
-      sudo apt-get update
-      sudo apt-get install ansible -y
+      #sudo apt-get update
+      #sudo apt-get upgrade -y
+      #sudo apt-add-repository ppa:ansible/ansible
+      #sudo apt-get update
+      #sudo apt-get install ansible -y
       ansible --version
       
       
