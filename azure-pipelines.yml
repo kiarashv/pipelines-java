@@ -1,16 +1,8 @@
-
-
 trigger:
 - master
 
-parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
-
 jobs:
-- job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
-  steps:
-  - script: npm install
-  - script: npm test
+- template: templates/npm-with-params.yml  # Template reference
+  parameters:
+    name: Linux
+    vmImage: 'ubuntu-16.04'
