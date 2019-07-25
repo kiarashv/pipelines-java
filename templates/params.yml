@@ -7,4 +7,4 @@ jobs:
   pool: ${{ parameters.pool }}
   steps:
   - script: echo "hello ${{ parameters.rfcId }}"
-  - script: echo ${{ stackId }}
+  - script: echo $stackId
