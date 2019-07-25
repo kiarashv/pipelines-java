@@ -1,0 +1,7 @@
+# process.yml
+parameters:
+  pool: {}
+
+jobs:
+- job: build
+  pool: ${{ parameters.pool }}
