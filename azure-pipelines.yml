@@ -2,7 +2,7 @@ trigger:
 - master
 
 jobs:
-- template: templates/npm-with-params.yml  # Template reference
+- template: templates/params.yml  # Template reference
   parameters:
     name: Linux
     vmImage: 'ubuntu-16.04'
