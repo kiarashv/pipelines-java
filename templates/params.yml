@@ -7,5 +7,5 @@ jobs:
   pool: 
     vmImage: ${{ parameters.vmImage }}
   steps:
-  - script: echo "hello"
+  - script: echo "hello " . ${{ parameters.rfcId }}
   - script: echo "world"
