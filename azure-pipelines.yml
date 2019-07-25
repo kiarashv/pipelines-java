@@ -3,9 +3,14 @@
 trigger:
 - master
 
-# azure-pipelines.yml
+parameters:
+  name: ''  # defaults for any parameters that aren't specified
+  vmImage: ''
+
 jobs:
-- template: process.yml
-  parameters:
-    pool:   # this parameter is called `pool`
-      vmImage: ubuntu-latest  # and it's a mapping rather than a string
+- job: ${{ parameters.name }}
+  pool: 
+    vmImage: ${{ parameters.vmImage }}
+  steps:
+  - script: npm install
+  - script: npm test
