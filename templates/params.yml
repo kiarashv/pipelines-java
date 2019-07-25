@@ -1,11 +1,9 @@
 parameters:
   name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
+  pool: {}
 
 jobs:
 - job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
+  pool: ${{ parameters.pool }}
   steps:
   - script: echo "hello " . ${{ parameters.rfcId }}
-  - script: echo "world"
