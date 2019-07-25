@@ -22,6 +22,7 @@ steps:
       #sudo apt-get update
       #sudo apt-get install ansible -y
       ansible --version
+      echo $stackId
       
       
       # Use the environment variables input below to pass secret variables to this script
